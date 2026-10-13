@@ -1,0 +1,149 @@
+[
+  {
+    "objectID": "einfuehrung.html#ganze-seite-2",
+    "href": "einfuehrung.html#ganze-seite-2",
+    "title": "Einführung",
+    "section": "Ganze Seite 2",
+    "text": "Ganze Seite 2"
+  },
+  {
+    "objectID": "einfuehrung.html#viertel-seite",
+    "href": "einfuehrung.html#viertel-seite",
+    "title": "Einführung",
+    "section": "Viertel Seite",
+    "text": "Viertel Seite\n\n\nText in der linken Spalte.\n\n\n\n\n\n\n\n\nText in der rechten Spalte."
+  },
+  {
+    "objectID": "einfuehrung.html#halbe-seite",
+    "href": "einfuehrung.html#halbe-seite",
+    "title": "Einführung",
+    "section": "Halbe Seite",
+    "text": "Halbe Seite\n\n\nDas ist eine halbe Seite."
+  },
+  {
+    "objectID": "einfuehrung.html#tabelle",
+    "href": "einfuehrung.html#tabelle",
+    "title": "Einführung",
+    "section": "Tabelle",
+    "text": "Tabelle\n\n\n\n\n\nThema\n\n\n\n\n\nEinführung\n1\n\n\nGrundgleichungen\n2\n\n\nOrtsdiskretisierung FDM\n3/4\n\n\nTurbulenz\n5/6\n\n\nZeitdiskretisierung FDM\n7\n\n\nFVM\n8/9\n\n\nTurbomaschinen\n10\n\n\nGeometrie\n11\n\n\nVernetzung\n12\n\n\nOptimierung\n13/14\n\n\n\n\n\n\n\nThema\n\n\n\n\n\nOrtsdiskretisierung (H)\n1\n\n\nZeitdiskretisierung (H)\n2\n\n\nEinführung (CFX)\n3\n\n\nBackward-Facing-Step (CFX)\n4/5\n\n\nSimulation Turbine (CFX)\n6/7\n\n\nZylinderumströmung\n8\n\n\nAutomatisierung\n9\n\n\nVernetzung (H)\n10\n\n\nOptimierung\n11\n\n\nRechnerübung Zusatz (CFX)\n12\n\n\n\n\n\n10 Vorlesungen in 14 x 90 Minuten und 9 Übungen in 12 x 90 Minuten 1 x Institutsbesichtigung und 2 x Offene Sprechstunde"
+  },
+  {
+    "objectID": "einfuehrung.html#komplizierte-formeln",
+    "href": "einfuehrung.html#komplizierte-formeln",
+    "title": "Einführung",
+    "section": "Komplizierte Formeln",
+    "text": "Komplizierte Formeln\n\nUnterüberschrift\nEindimensionales Konvektions-Diffusions-Problem \\(u\\pp{\\phi}{x} = \\Gamma \\pp{}{x}\\pp{\\phi}{x}\\) mit \\(u,\\Gamma=\\mathrm{const}\\)\n\n\n\\[\n{\\small\\begin{aligned}\nu \\pp{\\phi}{x}\n  &\n  \\hide{\n    \\rightarrow\n      \\intV{u\\pp{\\phi}{x}}\n    \\rightarrow\n      \\intS{u \\phi}\n    \\rightarrow\n      - \\at{u \\phi}{k}\n      + \\at{u \\phi}{k+1}\n  }\n  \\\\\n  &\n  \\hide{\n    \\rightarrow\n      - u \\frac{\\phi_{m-1} + \\phi_{m}}{2}\n      + u \\frac{\\phi_m + \\phi_{m+1}}{2}\n    \\rightarrow\n    u\\fd{\\phi}{m+1}{m-1}{2}\n  }\n  \\\\\n\\Gamma \\pp{}{x} \\pp{\\phi}{x}\n  &\n  \\hide{\n    \\rightarrow\n      \\intV{\\Gamma \\pp{}{x}\\pp{\\phi}{x}}\n    \\rightarrow\n      \\intS{\\Gamma \\pp{\\phi}{x}}\n    \\rightarrow\n      - \\at{\\Gamma\\pp{ \\phi}{x}}{k}\n      + \\at{\\Gamma \\pp{\\phi}{x}}{k+1}\n  }\n  \\\\\n  &\n  \\hide{\n    \\rightarrow\n      - \\Gamma \\fd{\\phi}{m}{m-1}{\\delta x}\n      + \\Gamma \\fd{\\phi}{m+1}{m}{\\delta x}\n    \\rightarrow\n    \\Gamma \\ffd{\\phi}{m+1}{m}{m-1}{\\delta x}\n  }\n\\end{aligned}}\n\\]\n\n\n\\[\n{\\small\\begin{aligned}\nu \\pp{\\phi}{x}\n  &\n    \\rightarrow\n      \\intV{u\\pp{\\phi}{x}}\n    \\rightarrow\n      \\intS{u \\phi}\n  \\hide{\n    \\rightarrow\n      - \\at{u \\phi}{k}\n      + \\at{u \\phi}{k+1}\n  }\n  \\\\\n  &\n  \\hide{\n    \\rightarrow\n      - u \\frac{\\phi_{m-1} + \\phi_{m}}{2}\n      + u \\frac{\\phi_m + \\phi_{m+1}}{2}\n    \\rightarrow\n    u\\fd{\\phi}{m+1}{m-1}{2}\n  }\n  \\\\\n\\Gamma \\pp{}{x} \\pp{\\phi}{x}\n  &\n    \\rightarrow\n      \\intV{\\Gamma \\pp{}{x}\\pp{\\phi}{x}}\n    \\rightarrow\n      \\intS{\\Gamma \\pp{\\phi}{x}}\n  \\hide{\n    \\rightarrow\n      - \\at{\\Gamma\\pp{ \\phi}{x}}{k}\n      + \\at{\\Gamma \\pp{\\phi}{x}}{k+1}\n  }\n  \\\\\n  &\n  \\hide{\n    \\rightarrow\n      - \\Gamma \\fd{\\phi}{m}{m-1}{\\delta x}\n      + \\Gamma \\fd{\\phi}{m+1}{m}{\\delta x}\n    \\rightarrow\n    \\Gamma \\ffd{\\phi}{m+1}{m}{m-1}{\\delta x}\n  }\n\\end{aligned}}\n\\]\n\n\n\\[\n{\\small\\begin{aligned}\nu \\pp{\\phi}{x}\n  &\n    \\rightarrow\n      \\intV{u\\pp{\\phi}{x}}\n    \\rightarrow\n      \\intS{u \\phi}\n    \\rightarrow\n      - \\at{u \\phi}{k}\n      + \\at{u \\phi}{k+1}\n  \\\\\n  &\n  \\hide{\n    \\rightarrow\n      - u \\frac{\\phi_{m-1} + \\phi_{m}}{2}\n      + u \\frac{\\phi_m + \\phi_{m+1}}{2}\n    \\rightarrow\n    u\\fd{\\phi}{m+1}{m-1}{2}\n  }\n  \\\\\n\\Gamma \\pp{}{x} \\pp{\\phi}{x}\n  &\n    \\rightarrow\n      \\intV{\\Gamma \\pp{}{x}\\pp{\\phi}{x}}\n    \\rightarrow\n      \\intS{\\Gamma \\pp{\\phi}{x}}\n    \\rightarrow\n      - \\at{\\Gamma\\pp{ \\phi}{x}}{k}\n      + \\at{\\Gamma \\pp{\\phi}{x}}{k+1}\n  \\\\\n  &\n  \\hide{\n    \\rightarrow\n      - \\Gamma \\fd{\\phi}{m}{m-1}{\\delta x}\n      + \\Gamma \\fd{\\phi}{m+1}{m}{\\delta x}\n    \\rightarrow\n    \\Gamma \\ffd{\\phi}{m+1}{m}{m-1}{\\delta x}\n  }\n\\end{aligned}}\n\\]\n\n\n\\[\n{\\small\\begin{aligned}\nu \\pp{\\phi}{x}\n  &\n    \\rightarrow\n      \\intV{u\\pp{\\phi}{x}}\n    \\rightarrow\n      \\intS{u \\phi}\n    \\rightarrow\n      - \\at{u \\phi}{k}\n      + \\at{u \\phi}{k+1}\n  \\\\\n  &\n    \\rightarrow\n      - u \\frac{\\phi_{m-1} + \\phi_{m}}{2}\n      + u \\frac{\\phi_m + \\phi_{m+1}}{2}\n    \\rightarrow\n    u\\fd{\\phi}{m+1}{m-1}{2}\n  \\\\\n\\Gamma \\pp{}{x} \\pp{\\phi}{x}\n  &\n    \\rightarrow\n      \\intV{\\Gamma \\pp{}{x}\\pp{\\phi}{x}}\n    \\rightarrow\n      \\intS{\\Gamma \\pp{\\phi}{x}}\n    \\rightarrow\n      - \\at{\\Gamma\\pp{ \\phi}{x}}{k}\n      + \\at{\\Gamma \\pp{\\phi}{x}}{k+1}\n  \\\\\n  &\n    \\rightarrow\n      - \\Gamma \\fd{\\phi}{m}{m-1}{\\delta x}\n      + \\Gamma \\fd{\\phi}{m+1}{m}{\\delta x}\n    \\rightarrow\n    \\Gamma \\ffd{\\phi}{m+1}{m}{m-1}{\\delta x}\n\\end{aligned}}\n\\]\n\n\n\n\nDifferential\n\n\nDifferential \\(\\rightarrow\\) Integral mit Divergenztheorem\n\n\nDifferential \\(\\rightarrow\\) Integral mit Divergenztheorem\n\n\nDifferential \\(\\rightarrow\\) Integral mit Divergenztheorem \\(\\rightarrow\\) lineare Approximation\n\n\n\n\\[\n{\\small\n\\left(\n-\\frac{u}{2}-\\frac{\\Gamma}{\\delta x}\n\\right) \\phi_{m-1}\n+\\left(\n\\frac{2\\Gamma}{\\delta x}\n\\right) \\phi_{m}\n+\\left(\n\\frac{u}{2}-\\frac{\\Gamma}{\\delta x}\n\\right) \\phi_{m+1} = 0\n}\n\\]"
+  },
+  {
+    "objectID": "einfuehrung.html#gleichungen",
+    "href": "einfuehrung.html#gleichungen",
+    "title": "Einführung",
+    "section": "Gleichungen",
+    "text": "Gleichungen\n\nEine Matrix\nFVM liefert \\[{\\small\n\\left(\n-\\frac{u}{2}-\\frac{\\Gamma}{\\delta x}\n\\right) \\phi_{m-1}\n+\\left(\n\\frac{2\\Gamma}{\\delta x}\n\\right) \\phi_{m}\n+\\left(\n\\frac{u}{2}-\\frac{\\Gamma}{\\delta x}\n\\right) \\phi_{m+1} = 0\n}\\]\n\nKoeffizienten für die \\(m\\)-te Zeile\nAnaloges Aufstellen für alle anderen Auswertestellen liefern das lineare Gleichungssystem\n\n\\[\n{\\scriptsize\n\\begin{bmatrix}\n\\blacksquare & \\blacksquare & 0  & \\dots & \\dots & \\dots & 0\\\\\n\\blacksquare & \\ddots & \\ddots & 0 & & & \\vdots\\\\\n0 & \\ddots & \\ddots  & \\ddots & 0 &  & \\vdots\\\\\n\\vdots & 0 & \\blacksquare  & \\blacksquare & \\blacksquare& 0 & \\vdots\\\\\n\\vdots & & 0 & \\ddots & \\ddots& \\ddots & 0\\\\\n\\vdots & & & 0 & \\ddots& \\ddots & \\blacksquare\\\\\n0 & \\dots & \\dots  & \\dots & 0 & \\blacksquare & \\blacksquare\\\\\n\\end{bmatrix}\n\\begin{bmatrix}\n\\phi_1 \\\\\n\\vdots \\\\\n\\phi_m \\\\\n\\vdots \\\\\n\\phi_N \\\\\n\\end{bmatrix}\n= \\begin{bmatrix}\n0 \\\\\n\\vdots \\\\\n0 \\\\\n\\vdots \\\\\n0 \\\\\n\\end{bmatrix}\n\\mathrm{mit} \\; \\blacksquare \\; \\mathrm{für\\ Einträge} \\neq 0\n}\n\\]\n\nMatrix hat für den gezeigten Fall eine Bandstruktur\nMatrix ist fast immer schwachbesetzt und die Besetzungsstruktur ist abhängig vom verwendeten Berechnungsgitter"
+  },
+  {
+    "objectID": "einfuehrung.html#turbulenzmodellierung",
+    "href": "einfuehrung.html#turbulenzmodellierung",
+    "title": "Einführung",
+    "section": "Turbulenzmodellierung",
+    "text": "Turbulenzmodellierung\n\n\nHier steht ein Zitat in der Mitte der Spalte.\n\n@krappel_2020\n\n\n\nPunkt 1\n\nUnterpunkt\n\nPunkt 2\nPunkt 3\nPunkt 4\n\n\n\nText unter der geteilten Seite mit einer Formel in \\scriptsize:\n\\[\n{\\scriptsize\n  \\pp{}{t} \\uv +\n  \\underbrace{\n    \\uv \\cdot \\left( \\nabla \\cdot \\uv \\right)\n  }_{\n  \\mathrm{nicht-linear}\n  } =\n  \\nu \\nabla \\cdot \\left( \\nabla \\cdot \\underline{u} \\right) -\n  \\frac{1}{\\rho} \\nabla p\n}\n\\]\nDieser Tensor wird durch Turbulenzmodellierung approximiert."
+  },
+  {
+    "objectID": "einfuehrung.html#anwendung",
+    "href": "einfuehrung.html#anwendung",
+    "title": "Einführung",
+    "section": "Anwendung",
+    "text": "Anwendung\n\nWasserkraftwerk in Nepal @Hoffmann_2000\nLeistungsschwankungen der Turbine verursacht durch die Trifurkation"
+  },
+  {
+    "objectID": "einfuehrung.html#matplotlib-schaubild",
+    "href": "einfuehrung.html#matplotlib-schaubild",
+    "title": "Einführung",
+    "section": "Matplotlib Schaubild",
+    "text": "Matplotlib Schaubild\n\nNewtonsche und nichtnewtonsche Fluide\nDie Schergeschwindigkeit \\(\\dot{\\gamma} = \\der{u}{y}\\) ist proportional zur Schubspannung \\(\\tau\\). Es gilt \\(\\tau \\propto \\der{u}{y}\\) bzw. \\(\\tau = \\mu \\der{u}{y}\\). Die Größe \\(\\mu\\) wird als dynamische Viskosität oder einfach als Viskosität bezeichnet. Oft wird die Viskosität mit der Dichte normiert \\(\\nu = \\frac{\\mu}{\\rho}\\) und als kinematische Viskosität bezeichnet.\n\n\n\n\n\n\nNote\n\n\n\nEin Newtonsches Fluid hat eine konstante Viskosität. Der Zusammenhang zwischen der Schergeschwindigkeit und der Schubspannung ist also linear.\n\n\n\n\n\n\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family ['xkcd', 'xkcd Script', 'Comic Neue', 'Comic Sans MS'] not found. Falling back to DejaVu Sans.\nfindfont: Font family ['xkcd', 'xkcd Script', 'Comic Neue', 'Comic Sans MS'] not found. Falling back to DejaVu Sans.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\n\n\n\n\n\n\n\n\n\n\n\n\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\nfindfont: Font family 'xkcd' not found.\nfindfont: Font family 'xkcd Script' not found.\nfindfont: Font family 'Comic Neue' not found.\nfindfont: Font family 'Comic Sans MS' not found.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nNichtnewtonsche Fluide können sich deutlich anders verhalten, siehe z.B. Weissenberger-Effekt @yt_weissenberger."
+  },
+  {
+    "objectID": "einfuehrung.html#referenzen",
+    "href": "einfuehrung.html#referenzen",
+    "title": "Einführung",
+    "section": "Referenzen",
+    "text": "Referenzen"
+  },
+  {
+    "objectID": "index.html#ganze-seite",
+    "href": "index.html#ganze-seite",
+    "title": "Numerischer Titel",
+    "section": "Ganze Seite",
+    "text": "Ganze Seite"
+  },
+  {
+    "objectID": "index.html#ganze-seite-2",
+    "href": "index.html#ganze-seite-2",
+    "title": "Numerischer Titel",
+    "section": "Ganze Seite 2",
+    "text": "Ganze Seite 2"
+  },
+  {
+    "objectID": "index.html#viertel-seite",
+    "href": "index.html#viertel-seite",
+    "title": "Numerischer Titel",
+    "section": "Viertel Seite",
+    "text": "Viertel Seite\n\n\nText in der linken Spalte.\n\n\n\n\n\n\n\nText in der rechten Spalte."
+  },
+  {
+    "objectID": "index.html#halbe-seite",
+    "href": "index.html#halbe-seite",
+    "title": "Numerischer Titel",
+    "section": "Halbe Seite",
+    "text": "Halbe Seite\n\n\nDas ist eine halbe Seite."
+  },
+  {
+    "objectID": "index.html#tabelle",
+    "href": "index.html#tabelle",
+    "title": "Numerischer Titel",
+    "section": "Tabelle",
+    "text": "Tabelle\n\n\n\n\n\nThema\n\n\n\n\n\nEinführung\n1\n\n\nGrundgleichungen\n2\n\n\nOrtsdiskretisierung FDM\n3/4\n\n\nTurbulenz\n5/6\n\n\nZeitdiskretisierung FDM\n7\n\n\nFVM\n8/9\n\n\nTurbomaschinen\n10\n\n\nGeometrie\n11\n\n\nVernetzung\n12\n\n\nOptimierung\n13/14\n\n\n\n\n\n\n\nThema\n\n\n\n\n\nOrtsdiskretisierung (H)\n1\n\n\nZeitdiskretisierung (H)\n2\n\n\nEinführung (CFX)\n3\n\n\nBackward-Facing-Step (CFX)\n4/5\n\n\nSimulation Turbine (CFX)\n6/7\n\n\nZylinderumströmung\n8\n\n\nAutomatisierung\n9\n\n\nVernetzung (H)\n10\n\n\nOptimierung\n11\n\n\nRechnerübung Zusatz (CFX)\n12\n\n\n\n\n10 Vorlesungen in 14 x 90 Minuten und 9 Übungen in 12 x 90 Minuten 1 x Institutsbesichtigung und 2 x Offene Sprechstunde"
+  },
+  {
+    "objectID": "index.html#komplizierte-formeln",
+    "href": "index.html#komplizierte-formeln",
+    "title": "Numerischer Titel",
+    "section": "Komplizierte Formeln",
+    "text": "Komplizierte Formeln\nUnterüberschrift\nEindimensionales Konvektions-Diffusions-Problem \\(u \\frac{\\partial \\phi}{\\partial x}  = \\Gamma  \\frac{\\partial }{\\partial x}  \\frac{\\partial \\phi}{\\partial x} \\) mit \\(u,\\Gamma=\\mathrm{const}\\)\n\n\n\\[\n{\\small\\begin{aligned}\nu  \\frac{\\partial \\phi}{\\partial x}\n  &\n   \\color{lightgray}{\n    \\rightarrow\n       \\int_\\mathcal{V} u \\frac{\\partial \\phi}{\\partial x}  \\, d\\mathcal{V}\n    \\rightarrow\n       \\int_\\mathcal{S} u \\phi \\, d\\mathcal{S}\n    \\rightarrow\n      -  \\left[ u \\phi \\right]_{k}\n      +  \\left[ u \\phi \\right]_{k+1}  \n  }\n  \\\\\n  &\n   \\color{lightgray}{\n    \\rightarrow\n      - u \\frac{\\phi_{m-1} + \\phi_{m}}{2}\n      + u \\frac{\\phi_m + \\phi_{m+1}}{2}\n    \\rightarrow\n    u \\frac{{\\phi}_{m+1}-{\\phi}_{m-1}}{2}\n  }\n  \\\\\n\\Gamma  \\frac{\\partial }{\\partial x}   \\frac{\\partial \\phi}{\\partial x}\n  &\n   \\color{lightgray}{\n    \\rightarrow\n       \\int_\\mathcal{V} \\Gamma  \\frac{\\partial }{\\partial x}  \\frac{\\partial \\phi}{\\partial x}  \\, d\\mathcal{V}\n    \\rightarrow\n       \\int_\\mathcal{S} \\Gamma  \\frac{\\partial \\phi}{\\partial x}  \\, d\\mathcal{S}\n    \\rightarrow\n      -  \\left[ \\Gamma \\frac{\\partial  \\phi}{\\partial x}  \\right]_{k}\n      +  \\left[ \\Gamma  \\frac{\\partial \\phi}{\\partial x}  \\right]_{k+1}  \n  }\n  \\\\\n  &\n   \\color{lightgray}{\n    \\rightarrow\n      - \\Gamma  \\frac{{\\phi}_{m}-{\\phi}_{m-1}}{\\delta x}\n      + \\Gamma  \\frac{{\\phi}_{m+1}-{\\phi}_{m}}{\\delta x}\n    \\rightarrow\n    \\Gamma  \\frac{{\\phi}_{m+1}-{2\\phi}_{m}+{\\phi}_{m-1}}{\\delta x}\n  }\n\\end{aligned}}\n\\]\n\n\n\\[\n{\\small\\begin{aligned}\nu  \\frac{\\partial \\phi}{\\partial x}\n  &\n    \\rightarrow\n       \\int_\\mathcal{V} u \\frac{\\partial \\phi}{\\partial x}  \\, d\\mathcal{V}\n    \\rightarrow\n       \\int_\\mathcal{S} u \\phi \\, d\\mathcal{S}\n   \\color{lightgray}{\n    \\rightarrow\n      -  \\left[ u \\phi \\right]_{k}\n      +  \\left[ u \\phi \\right]_{k+1}  \n  }\n  \\\\\n  &\n   \\color{lightgray}{\n    \\rightarrow\n      - u \\frac{\\phi_{m-1} + \\phi_{m}}{2}\n      + u \\frac{\\phi_m + \\phi_{m+1}}{2}\n    \\rightarrow\n    u \\frac{{\\phi}_{m+1}-{\\phi}_{m-1}}{2}\n  }\n  \\\\\n\\Gamma  \\frac{\\partial }{\\partial x}   \\frac{\\partial \\phi}{\\partial x}\n  &\n    \\rightarrow\n       \\int_\\mathcal{V} \\Gamma  \\frac{\\partial }{\\partial x}  \\frac{\\partial \\phi}{\\partial x}  \\, d\\mathcal{V}\n    \\rightarrow\n       \\int_\\mathcal{S} \\Gamma  \\frac{\\partial \\phi}{\\partial x}  \\, d\\mathcal{S}\n   \\color{lightgray}{\n    \\rightarrow\n      -  \\left[ \\Gamma \\frac{\\partial  \\phi}{\\partial x}  \\right]_{k}\n      +  \\left[ \\Gamma  \\frac{\\partial \\phi}{\\partial x}  \\right]_{k+1}  \n  }\n  \\\\\n  &\n   \\color{lightgray}{\n    \\rightarrow\n      - \\Gamma  \\frac{{\\phi}_{m}-{\\phi}_{m-1}}{\\delta x}\n      + \\Gamma  \\frac{{\\phi}_{m+1}-{\\phi}_{m}}{\\delta x}\n    \\rightarrow\n    \\Gamma  \\frac{{\\phi}_{m+1}-{2\\phi}_{m}+{\\phi}_{m-1}}{\\delta x}\n  }\n\\end{aligned}}\n\\]\n\n\n\\[\n{\\small\\begin{aligned}\nu  \\frac{\\partial \\phi}{\\partial x}\n  &\n    \\rightarrow\n       \\int_\\mathcal{V} u \\frac{\\partial \\phi}{\\partial x}  \\, d\\mathcal{V}\n    \\rightarrow\n       \\int_\\mathcal{S} u \\phi \\, d\\mathcal{S}\n    \\rightarrow\n      -  \\left[ u \\phi \\right]_{k}\n      +  \\left[ u \\phi \\right]_{k+1}  \n  \\\\\n  &\n   \\color{lightgray}{\n    \\rightarrow\n      - u \\frac{\\phi_{m-1} + \\phi_{m}}{2}\n      + u \\frac{\\phi_m + \\phi_{m+1}}{2}\n    \\rightarrow\n    u \\frac{{\\phi}_{m+1}-{\\phi}_{m-1}}{2}\n  }\n  \\\\\n\\Gamma  \\frac{\\partial }{\\partial x}   \\frac{\\partial \\phi}{\\partial x}\n  &\n    \\rightarrow\n       \\int_\\mathcal{V} \\Gamma  \\frac{\\partial }{\\partial x}  \\frac{\\partial \\phi}{\\partial x}  \\, d\\mathcal{V}\n    \\rightarrow\n       \\int_\\mathcal{S} \\Gamma  \\frac{\\partial \\phi}{\\partial x}  \\, d\\mathcal{S}\n    \\rightarrow\n      -  \\left[ \\Gamma \\frac{\\partial  \\phi}{\\partial x}  \\right]_{k}\n      +  \\left[ \\Gamma  \\frac{\\partial \\phi}{\\partial x}  \\right]_{k+1}  \n  \\\\\n  &\n   \\color{lightgray}{\n    \\rightarrow\n      - \\Gamma  \\frac{{\\phi}_{m}-{\\phi}_{m-1}}{\\delta x}\n      + \\Gamma  \\frac{{\\phi}_{m+1}-{\\phi}_{m}}{\\delta x}\n    \\rightarrow\n    \\Gamma  \\frac{{\\phi}_{m+1}-{2\\phi}_{m}+{\\phi}_{m-1}}{\\delta x}\n  }\n\\end{aligned}}\n\\]\n\n\n\\[\n{\\small\\begin{aligned}\nu  \\frac{\\partial \\phi}{\\partial x}\n  &\n    \\rightarrow\n       \\int_\\mathcal{V} u \\frac{\\partial \\phi}{\\partial x}  \\, d\\mathcal{V}\n    \\rightarrow\n       \\int_\\mathcal{S} u \\phi \\, d\\mathcal{S}\n    \\rightarrow\n      -  \\left[ u \\phi \\right]_{k}\n      +  \\left[ u \\phi \\right]_{k+1}  \n  \\\\\n  &\n    \\rightarrow\n      - u \\frac{\\phi_{m-1} + \\phi_{m}}{2}\n      + u \\frac{\\phi_m + \\phi_{m+1}}{2}\n    \\rightarrow\n    u \\frac{{\\phi}_{m+1}-{\\phi}_{m-1}}{2}\n  \\\\\n\\Gamma  \\frac{\\partial }{\\partial x}   \\frac{\\partial \\phi}{\\partial x}\n  &\n    \\rightarrow\n       \\int_\\mathcal{V} \\Gamma  \\frac{\\partial }{\\partial x}  \\frac{\\partial \\phi}{\\partial x}  \\, d\\mathcal{V}\n    \\rightarrow\n       \\int_\\mathcal{S} \\Gamma  \\frac{\\partial \\phi}{\\partial x}  \\, d\\mathcal{S}\n    \\rightarrow\n      -  \\left[ \\Gamma \\frac{\\partial  \\phi}{\\partial x}  \\right]_{k}\n      +  \\left[ \\Gamma  \\frac{\\partial \\phi}{\\partial x}  \\right]_{k+1}  \n  \\\\\n  &\n    \\rightarrow\n      - \\Gamma  \\frac{{\\phi}_{m}-{\\phi}_{m-1}}{\\delta x}\n      + \\Gamma  \\frac{{\\phi}_{m+1}-{\\phi}_{m}}{\\delta x}\n    \\rightarrow\n    \\Gamma  \\frac{{\\phi}_{m+1}-{2\\phi}_{m}+{\\phi}_{m-1}}{\\delta x}\n\\end{aligned}}\n\\]\n\n\n\n\nDifferential\n\n\nDifferential \\(\\rightarrow\\) Integral mit Divergenztheorem\n\n\nDifferential \\(\\rightarrow\\) Integral mit Divergenztheorem\n\n\nDifferential \\(\\rightarrow\\) Integral mit Divergenztheorem \\(\\rightarrow\\) lineare Approximation\n\n\n\n\\[\n{\\small\n\\left(\n-\\frac{u}{2}-\\frac{\\Gamma}{\\delta x}\n\\right) \\phi_{m-1}\n+\\left(\n\\frac{2\\Gamma}{\\delta x}\n\\right) \\phi_{m}\n+\\left(\n\\frac{u}{2}-\\frac{\\Gamma}{\\delta x}\n\\right) \\phi_{m+1} = 0\n}\n\\]"
+  },
+  {
+    "objectID": "index.html#gleichungen",
+    "href": "index.html#gleichungen",
+    "title": "Numerischer Titel",
+    "section": "Gleichungen",
+    "text": "Gleichungen\nEine Matrix\nFVM liefert \\[{\\small\n\\left(\n-\\frac{u}{2}-\\frac{\\Gamma}{\\delta x}\n\\right) \\phi_{m-1}\n+\\left(\n\\frac{2\\Gamma}{\\delta x}\n\\right) \\phi_{m}\n+\\left(\n\\frac{u}{2}-\\frac{\\Gamma}{\\delta x}\n\\right) \\phi_{m+1} = 0\n}\\]\n\nKoeffizienten für die \\(m\\)-te Zeile\nAnaloges Aufstellen für alle anderen Auswertestellen liefern das lineare Gleichungssystem\n\n\\[\n{\\scriptsize\n\\begin{bmatrix}\n\\blacksquare & \\blacksquare & 0  & \\dots & \\dots & \\dots & 0\\\\\n\\blacksquare & \\ddots & \\ddots & 0 & & & \\vdots\\\\\n0 & \\ddots & \\ddots  & \\ddots & 0 &  & \\vdots\\\\\n\\vdots & 0 & \\blacksquare  & \\blacksquare & \\blacksquare& 0 & \\vdots\\\\\n\\vdots & & 0 & \\ddots & \\ddots& \\ddots & 0\\\\\n\\vdots & & & 0 & \\ddots& \\ddots & \\blacksquare\\\\\n0 & \\dots & \\dots  & \\dots & 0 & \\blacksquare & \\blacksquare\\\\\n\\end{bmatrix}\n\\begin{bmatrix}\n\\phi_1 \\\\\n\\vdots \\\\\n\\phi_m \\\\\n\\vdots \\\\\n\\phi_N \\\\\n\\end{bmatrix}\n= \\begin{bmatrix}\n0 \\\\\n\\vdots \\\\\n0 \\\\\n\\vdots \\\\\n0 \\\\\n\\end{bmatrix}\n\\mathrm{mit} \\; \\blacksquare \\; \\mathrm{für\\ Einträge} \\neq 0\n}\n\\]\n\nMatrix hat für den gezeigten Fall eine Bandstruktur\nMatrix ist fast immer schwachbesetzt und die Besetzungsstruktur ist abhängig vom verwendeten Berechnungsgitter"
+  },
+  {
+    "objectID": "index.html#turbulenzmodellierung",
+    "href": "index.html#turbulenzmodellierung",
+    "title": "Numerischer Titel",
+    "section": "Turbulenzmodellierung",
+    "text": "Turbulenzmodellierung\n\n\nHier steht ein Zitat in der Mitte der Spalte.\n\n[1]\n\n\n\nPunkt 1\n\nUnterpunkt\n\nPunkt 2\nPunkt 3\nPunkt 4\n\n\nText unter der geteilten Seite mit einer Formel in \\scriptsize:\n\\[\n{\\scriptsize\n   \\frac{\\partial }{\\partial t}    \\underline{u}  +\n  \\underbrace{\n      \\underline{u}  \\cdot \\left( \\nabla \\cdot   \\underline{u}  \\right)\n  }_{\n  \\mathrm{nicht-linear}\n  } =\n  \\nu \\nabla \\cdot \\left( \\nabla \\cdot \\underline{u} \\right) -\n  \\frac{1}{\\rho} \\nabla p\n}\n\\]\nDieser Tensor wird durch Turbulenzmodellierung approximiert."
+  },
+  {
+    "objectID": "index.html#anwendung",
+    "href": "index.html#anwendung",
+    "title": "Numerischer Titel",
+    "section": "Anwendung",
+    "text": "Anwendung\nWasserkraftwerk in Nepal [2]\nLeistungsschwankungen der Turbine verursacht durch die Trifurkation"
+  },
+  {
+    "objectID": "index.html#matplotlib-schaubild",
+    "href": "index.html#matplotlib-schaubild",
+    "title": "Numerischer Titel",
+    "section": "Matplotlib Schaubild",
+    "text": "Matplotlib Schaubild\nNewtonsche und nichtnewtonsche Fluide\nDie Schergeschwindigkeit \\(\\dot{\\gamma} =  \\frac{d u}{d y} \\) ist proportional zur Schubspannung \\(\\tau\\). Es gilt \\(\\tau \\propto  \\frac{d u}{d y} \\) bzw. \\(\\tau = \\mu  \\frac{d u}{d y} \\). Die Größe \\(\\mu\\) wird als dynamische Viskosität oder einfach als Viskosität bezeichnet. Oft wird die Viskosität mit der Dichte normiert \\(\\nu = \\frac{\\mu}{\\rho}\\) und als kinematische Viskosität bezeichnet.\n\n\n\n\n\n\nNote\n\n\nEin Newtonsches Fluid hat eine konstante Viskosität. Der Zusammenhang zwischen der Schergeschwindigkeit und der Schubspannung ist also linear.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nNichtnewtonsche Fluide können sich deutlich anders verhalten, siehe z.B. Weissenberger-Effekt [3]."
+  },
+  {
+    "objectID": "index.html#referenzen",
+    "href": "index.html#referenzen",
+    "title": "Numerischer Titel",
+    "section": "Referenzen",
+    "text": "Referenzen\n\n\n[1] T. Krappel, “Large eddy simulation of a complete francis turbine.” (https://www.gauss-centre.eu/results/computational-and-scientific-engineering/large-eddy-simulation-of-a-complete-francis-turbine?no_cache=1&sword_list%5B0%5D=krappel&cHash=fd004c0078d48dc042bd56d5bf051285, 2020.\n\n\n[2] H. Hoffmann, R. Roswora, and A. Egger, “Rectification of the marsyangdi trifurcation,” Hydro Vision, p. 2000, 2000.\n\n\n[3] https://www.youtube.com/watch?v=FzVKTBs2yzk."
+  }
+]
